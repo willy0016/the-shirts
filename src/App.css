@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600&family=Vujahday+Script&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--black) ;
+  }
+
+* body {
+  font-family: var(--body1);
+  font-weight: var(--regular);
+  color: var(--black) ;
+}
+
+.container {
+  max-width: 88.75rem;
+  margin: 0 auto;
+}
+
+@media(max-width: 1400px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray100: #929191;
+  --gray200: #403E3E;
+  --gray300: #2C2C2C;
+  --gray400: #282828;
+  --green: #D9EDBF;
+  --yellow: #FDFFAB;
+  --orange: #FFCF81;
+  --red: #FFB996;
+
+  --tit: 'Vujahday Script', cursive;
+  --body1: 'Lato', sans-serif;
+  --body2: 'Montserrat', sans-serif;
+
+  --regular: 400;
+  --semiboldLato: 700;
+  --semiboldMont: 600;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: var(--white);
+}
+
+.swiper-pagination-bullet {
+  background: var(--white) !important;
+}
+
+
+@media(max-width: 520px) {
+  .swiper-button-next, .swiper-button-prev {
+    background-size: 20px;
+  }
+}

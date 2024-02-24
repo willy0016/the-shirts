@@ -1,0 +1,11 @@
+.prodsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.cards {
+  margin-bottom: 40px;
+}

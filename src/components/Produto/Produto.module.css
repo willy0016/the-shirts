@@ -1,0 +1,196 @@
+.containerSectionInitial {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.containerImg {
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  max-width: max-content;
+  justify-self: end;
+  border: 1px solid var(--black);
+  box-shadow: 3px 3px 0px 0px var(--white), 6px 6px 0px 0px var(--black);
+}
+
+.img {
+  padding: 16px 30px;
+  width: 400px;
+  height: 520px;
+}
+.containerRigth {
+  display: flex;
+  flex-direction: column;
+}
+
+.preco, .cartao {
+  font-family: var(--body);
+  color: var(--gray200);
+  font-size: 24px;
+}
+
+.cartao {
+  color: var(--black);
+  margin-top: 16px;
+  margin-bottom:32px;
+}
+
+.sizeTit, .desTit, .desBtnBuy {
+  font-family: var(--body);
+  color: var(--black);
+  font-size: 20px;
+}
+
+.sizeUl {
+  display: flex;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.size {
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 0px 0px var(--white), 2px 2px 0px 1px var(--black);
+  padding: 8px 12px;
+}
+
+.descConatainer {
+  margin-top: 32px;
+}
+
+.desText {
+  font-size: 18px;
+  margin-top: 18px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.desBtnBuy {
+  font-size: 24px;
+  background: var(--yellow);
+  padding: 20px 50px;
+  max-width: max-content;
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 0px 0px var(--white), 4px 4px 0px 0px var(--black);
+  cursor: pointer;
+  transition:box-shadow .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.desBtnCart {
+  font-size: 24px;
+  background: var(--yellow);
+  display: flex; 
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: max-content;
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 0px 0px var(--white), 4px 4px 0px 0px var(--black);
+  cursor: pointer;
+  transition:box-shadow .2s ease-in-out, border-color .2s ease-in-out;
+}
+
+.desBtnBuy:hover, .desBtnCart:hover {
+  box-shadow: 3px 3px 0px 0px var(--white), 6px 6px 0px 0px var(--black);
+}
+
+@media(max-width: 860px) {
+  .containerSectionInitial {
+    gap: 40px;
+  }
+
+  .img {
+    padding: 12px 20px;
+    width: 350px;
+    height: 480px;
+  }
+}
+@media(max-width: 740px) {
+  .containerImg {
+    justify-self: center;
+  }
+  .containerSectionInitial {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 370px) {
+  .img {
+    padding: 12px 20px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .btns {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
+@media(max-width: 320px) {
+  .img {
+    padding: 8px 16px;
+    width: 280px;
+    height: 340px;
+  }
+
+  .preco, .cartao {
+    font-size: 18px;
+  }
+  .cartao {
+    margin-top: 12px;
+    margin-bottom:20px;
+  }
+
+  .sizeTit, .desTit, .desBtnBuy {
+    font-size: 16px;
+  }
+  
+  .sizeUl {
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .size {
+    padding: 6px 10px;
+  }
+
+  .descConatainer {
+    margin-top: 24px;
+  }
+  
+  .desText {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  
+  .desBtnBuy {
+    font-size: 18px;
+    padding: 18px 48px;
+  }
+  
+  .desBtnCart {
+    font-size: 18px;
+    gap: 6px;
+    padding: 18px;
+  }
+  
+  .btns {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,22 @@
+.button {
+  font-size: 2rem;
+  font-family: var(--body1);
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  background: transparent;
+  color: var(--black);
+  box-shadow: 4px 4px 0px 0px var(--black);
+  transition:box-shadow .2s ease-in-out, border-color .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.button:hover, .button:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px 0px var(--black), 8px 8px 0px 0px var(--black);
+}
+
+.button:disabled {
+  opacity: .5;
+  cursor: wait;
+}

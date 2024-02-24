@@ -1,0 +1,252 @@
+.header {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+
+.navGeral {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.containerLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.75rem;
+}
+
+.liFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.btnSair {
+  font-size: 1rem;
+  font-family: var(--body1);
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--black);
+  background: transparent;
+  color: var(--black);
+  box-shadow: 2px 2px 0px 0px var(--white), 2px 2px 0px 1px var(--black);
+  padding: 4px 6px;
+  transition:box-shadow .2s ease-in-out, border-color .2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.btnSair:hover, .btnSair:focus {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px var(--black), 2px 2px 0px 1px var(--black);
+}
+
+
+.mobileBtn {
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  gap: 10px ;
+}
+
+#hamburger {
+  border-top: 2px solid var(--black);
+  width: 30px;
+  display: block;
+}
+
+#hamburger::after, #hamburger::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--black);
+  margin-top: 6px;
+  transition: .3s;
+  position: relative;
+}
+
+.ativo #hamburger {
+  border-top-color: transparent;
+}
+
+.ativo #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+.ativo #hamburger::before {
+  transform: rotate(135deg);
+}
+
+.menuHamburger {
+  display: block;
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  padding: 0 1rem;
+  background: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 0px 0px var(--white), 2px 2px 0px 1px var(--black);
+  transform: translateX(-10px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menuHamburgerActive {
+  transition: .3s;
+  transform: initial;
+  opacity: 1;
+  z-index: 100;
+  pointer-events: initial;
+}
+
+.SubMenuHamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.SubMenuHamburger .link{
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: border .2s ease-in-out;
+  border-bottom: 1px solid var(--gray300);
+  transition: border-bottom-style .3s ease-in-out;
+}
+
+.SubMenuHamburger .link:hover {
+  border-bottom-style: dashed;
+  font-style: 700;
+  color: var(--gray300);
+}
+
+.fromLeft::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.fromLeft:hover::after {
+  width: 100%;
+}
+
+.icon {
+  width: 24px;
+}
+
+.SubMenuHamburger:first-child{
+  margin-top: 18px;
+}
+
+.SubMenuHamburger:last-child{
+  margin-bottom: 32px;
+}
+
+@media(max-width: 600px) {
+  .navGeral {
+    height: 4rem;
+  }
+  
+  .containerLinks {
+    gap: 2rem;
+  }
+  
+  .liFlex {
+    gap: 0.5rem;
+  }
+  
+  .btnSair {
+    font-size: 1rem;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .navGeral {
+    height: 4rem;
+  }
+  
+  .logoItem {
+    max-width: 48px;
+  }
+
+  .iconsHeader {
+    max-width: 24px;
+  }
+  
+  .containerLinks {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    left: 15%;
+  transform: translateX(-15%);
+  }
+  
+  .liFlex {
+    gap: 0.5rem;
+  }
+  
+  .btnSair {
+    font-size: 0.75rem;
+    padding: 2px 4px;
+  }
+
+}
+
+@media(max-width: 400px) {
+  .mobileBtn {
+    height: 32px;
+    width: 32px;
+  }
+  .link {
+    font-size: 1rem
+  }
+  .SubMenuHamburger {
+    gap: 12px;
+  }
+  
+  .SubMenuHamburger .link{
+    padding: 6px;
+    gap: 6px;
+  }
+  
+  .fromLeft:hover::after {
+    width: 100%;
+  }
+  
+  .icon {
+    width: 18px;
+  }
+  
+  .SubMenuHamburger:first-child{
+    margin-top: 12px;
+  }
+  
+  .SubMenuHamburger:last-child{
+    margin-bottom: 24px;
+  }
+}

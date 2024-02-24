@@ -1,0 +1,54 @@
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.input {
+  border: 1px solid var(--black);
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8rem;
+  transition: box-shadow .2s;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-radius: 0;
+  box-shadow: 4px 4px 0px 0px var(--black);
+}
+
+.label {
+  display: block;
+  font-size: 1.25rem;
+  font-family: var(--body1);
+  font-weight: 400;
+  line-height: 1;
+  padding-bottom: .5rem;
+}
+
+.error {
+  color: #f31;
+  font-style: .875rem;
+  margin-top: .25rem;
+}
+
+@media(max-width: 340px) {
+  .wrapper {
+    margin-bottom: .675rem;
+  }
+  
+  .input {
+    font-size: .875rem;
+    padding: .5rem;
+  }
+  
+  .label {
+    font-size: .875rem;
+    padding-bottom: .25rem;
+  }
+  
+  .error {
+    font-style: .675rem;
+  }
+}

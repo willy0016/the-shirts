@@ -1,0 +1,101 @@
+.geral {
+  margin-bottom: 80px;
+}
+
+.fcol {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.component {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+.imgP {
+  background: var(--white);
+}
+
+.imgP img{
+  padding: 6px 16px;
+}
+
+.image {
+  width:  60px;
+  height:   60px;
+}
+
+.footerCart {
+  display: flex;
+  justify-content: end;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+.total p {
+  color: var(--black);
+  font-family: var(--body1);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.total button {
+  margin-top: 10px;
+} 
+
+.scrollableDiv {
+  overflow-y: auto;
+}
+
+.wrapper {
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+table {
+  width: 100%;
+  background: #232323;
+  color: var(--white);
+  border-collapse: collapse;
+}
+
+caption,th, td {
+  padding: 1rem; ;
+}
+
+caption,th {
+  text-align: left;
+}
+
+caption {
+  background: var(--black);
+  font-style: 1.5rem;
+  font-weight: 700;
+}
+
+th {
+  background: #1A1919;
+}
+
+tr:nth-of-type(2n) {
+  background: var(--gray400);
+}
+
+.tableContainer {
+  margin-top: 40px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media(max-width: 580px) {
+  .imgP img{
+    padding: 4px 8px;
+  }
+}
