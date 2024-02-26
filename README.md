@@ -1,8 +1,6 @@
 # the-shirts
 
-# the-shirts
-
-### Grupo: Mateus Borges e Guimarães, Willy Brenner e Hugo Leonardo
+### Grupo: Mateus Borges e Guimarães, Willy Brener e Hugo Leonardo
 
 ## Decrição do projeto:
 
@@ -45,6 +43,26 @@ No geral, o projeto "The-shirts" visa proporcionar aos usuários uma experiênci
 - **MongoDB:** Banco de dados NoSQL orientado a documentos. Utilizado para armazenar e gerenciar os dados da aplicação, como informações de produtos, usuários, e outras informações relevantes.
 
 - **Mongoose:** Biblioteca do Node.js que facilita a interação com o MongoDB, fornecendo uma camada de modelagem de dados mais simples e intuitiva. Utilizado para definir os modelos de dados, criar esquemas e realizar operações de CRUD no banco de dados MongoDB.
+
+## Como Utilizar:
+
+### Passo 1:
+
+- Instale o Node.js.
+- Faça o download dos seguintes repositórios: [the-shirts](https://github.com/MateusBorgesGuimaraes/the-shirts) ( front-end ), [shop-api](https://github.com/MateusBorgesGuimaraes/shop-api) ( back-end ).
+
+### Passo 2:
+
+- Abra o arquivo .env no repositorio shop-api.
+- Insira os segredos a seguir:
+- MONGO_URL: secret
+- PASS_SEC: secret
+- JWT_SEC: secret
+- Após inserir os segredos, dentro da pasta do repositório shop-api clique com o botão direito do mouse em uma área em branco, abra o terminal e use o comando ( npm start ) para iniciar a API.
+
+### Passo 3:
+
+- Dentro da pasta do repositório the-shirts clique com o botão direito do mouse em uma área em branco, abra o terminal e use o comando ( npm run dev ).
 
 ### Licença
 
